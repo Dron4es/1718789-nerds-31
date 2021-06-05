@@ -1,3 +1,24 @@
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/roboto.woff2);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/robotobold.woff2);
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/robotomedium.woff2);
+  font-weight: 500;
+  font-style: normal;
+}
+
 :root {
 --basic-black: #000000;
 --basic-extra-dark: #283136;
@@ -135,6 +156,24 @@ background-color: var(--basic-white);
 .statistics p {
   font-size: 16px;
   font-weight: 700;
+}
+
+.statistics .percentages-item-num {
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 64px;
+}
+
+sup {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.statistics .percentages-item-desc {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: inherit;
 }
 
 .footer-sale h4 {
