@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
+  <link rel="stylesheet" href="style/normalize.css">
   <link href="style/style.css" rel="stylesheet">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="favicon/icon.svg" type="image/svg+xml">
@@ -13,18 +14,18 @@
 
 <body class="page-body">
   <header class="main-header">
-    <nav class="main-navigation">
+    <nav class="main-nav">
       <a class="main-header-logo">
         <img src="/img/logo/logo-nerds.svg" width="160" height="65" alt="Логотип дизайн-студии Нёрдс">
       </a>
-      <ul class="site-navigation">
-        <li><a href="blank.html">Студия</a></li>
-        <li><a href="blank.html">Клиенты</a></li>
-        <li><a href="catalog.html">Магазин</a></li>
-        <li><a href="blank.html">Контакты</a></li>
+      <ul class="site-nav">
+        <li class="studio"><a href="blank.html">Студия</a></li>
+        <li class="customers"><a href="blank.html">Клиенты</a></li>
+        <li class="shop"><a href="catalog.html">Магазин</a></li>
+        <li class="contacs"><a href="blank.html">Контакты</a></li>
       </ul>
       <ul class="basket">
-        <li>
+        <li class="item-basket">
           <a href="blank.html">Корзина</a>
         </li>
       </ul>
@@ -32,25 +33,27 @@
   </header>
 
   <main class="container">
-    <h1>Дизайн-студия Нёрдс</h1>
+    <h1 class="main-title">Дизайн-студия Нёрдс</h1>
     <section class="features">
-      <h2>Преимущества</h2>
+      <h2 class="features-title">Преимущества</h2>
       <ul class="features-list">
         <li class="features-slider">
-          <h3>Долго, дорого,<br>
+          <h3 class="slider-title">Долго, дорого,<br>
             скурпулезно.</h3>
-          <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
+          <p class="slider-description">Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.
+          </p>
           <a class="learn-more" href="blank.html">Узнать больше</a>
         </li>
         <li class="features-slider">
-          <h3>Любим математику<br> как никто другой</h3>
-          <p>Никакого креатива, только математические формулы<br> для расчета идеальных пропорций</p>
+          <h3 class="slider-title">Любим математику<br> как никто другой</h3>
+          <p class="slider-description">Никакого креатива, только математические формулы<br> для расчета идеальных
+            пропорций</p>
           <a class="learn-more" href="blank.html">Узнать больше</a>
         </li>
         <li class="features-slider">
-          <h3>Только ночь,<br>
+          <h3 class="slider-title">Только ночь,<br>
             только хардкор</h3>
-          <p>Работать днем, как все? Мы против этого<br>
+          <p class="slider-description">Работать днем, как все? Мы против этого<br>
             Ближе к полуночи работа только начинается.</p>
           <a class="learn-more" href="blank.html">Узнать больше</a>
         </li>
@@ -63,37 +66,38 @@
     </section>
 
     <section class="specializations">
-      <h2>Специализации веб-студии Нёрдс</h2>
+      <h2 class="specializations-title">Специализации веб-студии Нёрдс</h2>
       <ul class="specializations-list">
         <li class="specializations-item">
           <img src="img/create-web.jpg" width="300" height="146" alt="Делаем веб-сайты">
-          <h3>Услуги</h3>
-          <p>Мир никогда не будет прежним<br> после того как увидит ваш сайт!</p>
+          <h3 class="specialization-title">Услуги</h3>
+          <p class="specialization-description">Мир никогда не будет прежним<br> после того как увидит ваш сайт!</p>
           <a class="order-web" href="blank.html">Заказать</a>
         </li>
         <li class="specializations-item">
           <img src="img/create-apps.jpg" width="300" height="146" alt="Делаем приложения">
-          <h3>Приложения</h3>
-          <p>Покорите топ-10 приложений<br> в AppStore и Google Play</p>
+          <h3 class="specialization-title">Приложения</h3>
+          <p class="specialization-description">Покорите топ-10 приложений<br> в AppStore и Google Play</p>
           <a class="order-app" href="blank.html">Заказать</a>
         </li>
         <li class="specializations-item">
           <img src="img/create-presentations.jpg" width="300" height="146" alt="Делаем презентации">
-          <h3>Презентации</h3>
-          <p>Вы даже не подозреваете,<br> насколько вы изумительны!</p>
+          <h3 class="specialization-title">Презентации</h3>
+          <p class="specialization-description">Вы даже не подозреваете,<br> насколько вы изумительны!</p>
           <a class="order-presentation" href="blank.html">Заказать</a>
         </li>
       </ul>
     </section>
 
     <section class="about-the-company">
-      <div>
-        <h2>О компании</h2>
+      <div class="about-leftside">
+        <h2 class="about-leftside-title">О компании</h2>
         <h3>Мы — маленькая, но гордая<br> дизайн-студия из Краснодара.</h3>
-        <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br> превыше креатива. Работаем не
+        <p class="about-leftside-description">Исповедуем принципы минимализма и чистоты. Ставим математический
+          расчет<br> превыше креатива. Работаем не
           покладая
           рук, как роботы.</p>
-        <h4>Выполняем заказы на разработку:</h4>
+        <h4 class="what-we-do">Выполняем заказы на разработку:</h4>
         <ul class="what-we-do-list">
           <li class="what-we-do-item">Веб-сайтов любой сложности</li>
           <li class="what-we-do-item">Мобильных приложений для iOs и Android</li>
@@ -120,19 +124,19 @@
       </div>
     </section>
     <section class="customers">
-      <h2>Клиенты</h2>
-      <ul>
-        <li>
+      <h2 class="customers-title">Клиенты</h2>
+      <ul class="customers-list">
+        <li class="customers-item">
           <a href="https://htmlacademy.ru"><img src="/img/logo/logo-html.svg" width="199" height="57"
               alt="Логотип html-academy"></a>
         </li>
-        <li>
+        <li class="customers-item">
           <a href="#"><img src="/img/logo/logo-borodinski.png" width="209" height="90" alt="Логотип BORODINSKI"></a>
         </li>
-        <li>
+        <li class="customers-item">
           <a href="#"><img src="/img/logo/logo-pink.png" width="185" height="52" alt="Логотип pink"></a>
         </li>
-        <li>
+        <li class="customers-item">
           <a href="#"><img src="/img/logo/logo-mishka.png" width="173" height="84" alt="Логотип mishka"></a>
         </li>
       </ul>
@@ -148,8 +152,8 @@
       <li class="social-btn"><a href="#">Instagram</a></li>
     </ul>
     <div class="footer-sale">
-      <h4>Давайте дружить, это выгодно!</h4>
-      <p>Скидка 10% для друзей из социальных сетей.</p>
+      <h4 class="sale-title">Давайте дружить, это выгодно!</h4>
+      <p class="sale">Скидка 10% для друзей из социальных сетей.</p>
     </div>
   </footer>
 </body>
