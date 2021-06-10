@@ -34,54 +34,54 @@
   </header>
 
   <main class="container">
-    <section class="catalog-title">
-      <h1>Магазин готовых шаблонов</h1>
+    <section>
+      <h1 class="catalog-title">Магазин готовых шаблонов</h1>
     </section>
     <section class="filter">
       <h2 class="filter-title">Фильтр товаров</h2>
       <form method="get" action="https://echo.htmlacademy.ru">
         <fieldset>
-          <legend>Стоимость:</legend>
-          <label>От<input type="text" name="from" placeholder="0"></label>
-          <label>До<input type="text" name="before" placeholder="15 000"></label>
+          <legend class="cost">Стоимость:</legend>
+          <label class="cost-from">От<input type="text" name="from" placeholder="0"></label>
+          <label class="cost-before">До<input type="text" name="before" placeholder="15 000"></label>
         </fieldset>
         <fieldset>
-          <legend>Сетка:</legend>
-          <ul>
-            <li>
+          <legend class="grid">Сетка:</legend>
+          <ul class="grid-list">
+            <li class="grid-item">
               <input type="radio" name="view" value="adaptive" id="filter-adaptive" checked>
-              <label for="filter-adaptive">Адаптивная</label>
+              <label class="grid-item" for="filter-adaptive">Адаптивная</label>
             </li>
-            <li>
+            <li class="grid-item">
               <input type="radio" name="view" value="fixed" id="filter-fixed">
               <label for="filter-fixed">Фиксированная</label>
             </li>
-            <li>
+            <li class="grid-item">
               <input type="radio" name="view" value="rubber" id="filter-rubber">
               <label for="filter-rubber">Резиновая</label>
             </li>
           </ul>
         </fieldset>
         <fieldset>
-          <legend>Особенности:</legend>
-          <ul>
-            <li>
+          <legend class="features">Особенности:</legend>
+          <ul class="features-list">
+            <li features-item>
               <input type="checkbox" name="slider" id="filter-slider" checked>
               <label for="filter-slider">Слайдер</label>
             </li>
-            <li>
+            <li class="features-item">
               <input type="checkbox" name="advantages-block" id="filter-advantages-block">
               <label for="filter-advantages-block">Блок преимуществ</label>
             </li>
-            <li>
+            <li class="features-item">
               <input type="checkbox" name="news" id="filter-news" checked>
               <label for="filter-news">Новости</label>
             </li>
-            <li>
+            <li class="features-item">
               <input type="checkbox" name="gallery" id="filter-gallery">
               <label for="filter-gallery">Галерея</label>
             </li>
-            <li>
+            <li class="features-item">
               <input type="checkbox" name="basket" id="filter-basket">
               <label for="filter-basket">Корзина</label>
             </li>
@@ -92,7 +92,7 @@
     </section>
 
     <section class="sorting">
-      <h2>Сортировать:</h2>
+      <h2 class="sorting-title">Сортировать:</h2>
       <ul class="sorting-list">
         <li class="sorting-item price">
           <a>По цене</a>
@@ -116,92 +116,92 @@
 
     <section class="templates">
       <h2 class="templates-title">Список шаблонов</h2>
-      <ul class="catalog">
+      <ul class="catalog-list">
         <li class="catalog-item">
-          <div class="design">
+          <div class="decor-dots">
             <span></span>
             <span></span>
             <span></span>
           </div>
           <figure class="template-img">
             <img src="/img/catalog/catalog-sedona.jpg" width="358" height="578" alt="Превью сайта Sedona">
-            <figcaption class="site-description">
-              <a href="#">Sedona</a>
+            <figcaption class="preview">
+              <a class="template-name" href="#">Sedona</a>
               <p class="template-desription">Информационный сайт<br> для туристов</p>
               <button class="catalog-item-price" type="button">9 900 ₽</button>
             </figcaption>
           </figure>
         </li>
         <li class="catalog-item">
-          <div class="design">
+          <div class="decor-dots">
             <span></span>
             <span></span>
             <span></span>
           </div>
           <figure class="template-img">
             <img src="/img/catalog/catalog-pink.jpg" width="358" height="578" alt="Превью сайта Pink App">
-            <figcaption class="site-description">
-              <a href="#">Pink App</a>
+            <figcaption class="preview">
+              <a class="template-name" href="#">Pink App</a>
               <p class="template-description">Продуктовый лендинг<br> приложения для iOS и Android</p>
               <button class="catalog-item-price" type="button">9 900 ₽</button>
             </figcaption>
           </figure>
         </li>
         <li class="catalog-item">
-          <div class="design">
+          <div class="decor-dots">
             <span></span>
             <span></span>
             <span></span>
           </div>
           <figure class="template-img">
             <img src="/img/catalog/catalog-borodinski.jpg" width="358" height="578" alt="Превью сайта Barbershop">
-            <figcaption class="site-description">
-              <a href="#">Barbershop</a>
+            <figcaption class="preview">
+              <a class="template-name" href="#">Barbershop</a>
               <p class="template-description">Сайт салона красоты.<br> Для мужчин, да.</p>
               <button class="catalog-item-price" type="button">9 900 ₽</button>
             </figcaption>
           </figure>
         </li>
         <li class="catalog-item">
-          <div class="design">
+          <div class="decor-dots">
             <span></span>
             <span></span>
             <span></span>
           </div>
           <figure class="template-img">
             <img src="/img/catalog/catalog-mishka.jpg" width="358" height="578" alt="Превью сайта MISHKA">
-            <figcaption class="site-description">
-              <a href="#">MISHKA</a>
+            <figcaption class="preview">
+              <a class="template-name" href="#">MISHKA</a>
               <p class="template-description">Интернет-магазин<br> вязаных игрушек</p>
               <button class="catalog-item-price" type="button">9 900 ₽</button>
             </figcaption>
           </figure>
         </li>
         <li class="catalog-item">
-          <div class="design">
+          <div class="decor-dots">
             <span></span>
             <span></span>
             <span></span>
           </div>
           <figure class="template-img">
             <img src="/img/catalog/catalog-aplus.jpg" width="358" height="578" alt="Превью сайта A Plus">
-            <figcaption class="site-description">
-              <a href="#">A Plus</a>
+            <figcaption class="preview">
+              <a class="template-name" href="#">A Plus</a>
               <p class="template-description">Лендинг курсов повышения<br> квалификации</p>
               <button class="catalog-item-price" type="button">9 900 ₽</button>
             </figcaption>
           </figure>
         </li>
         <li class="catalog-item">
-          <div class="design">
+          <div class="decor-dots">
             <span></span>
             <span></span>
             <span></span>
           </div>
           <figure class="template-img">
             <img src="/img/catalog/catalog-kvast.jpg" width="358" height="578" alt="Превью сайта КВАСТ">
-            <figcaption class="site-description">
-              <a href="#">КВАСТ</a>
+            <figcaption class="preview">
+              <a class="template-name" href="#">КВАСТ</a>
               <p class="template-description">Промо-сайт производителя<br> крафтового кваса</p>
               <button class="catalog-item-price" type="button">9 900 ₽</button>
             </figcaption>

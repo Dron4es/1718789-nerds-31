@@ -25,8 +25,10 @@
 --basic-gray: #666666;
 --basic-extra-gray: #444444;
 --head-gray: #EEEEEE;
+--light-gray: #4D4D4D;
+--minimal-gray: #666666;
 --special-pink: #FB565A;
---special_green: #00CA74;
+--special-green: #00CA74;
 --secial-yellow: #EFC849;
 --basic-white: #ffffff;
 }
@@ -64,21 +66,21 @@ background-color: var(--basic-white);
   text-decoration: none;
 }
 
-.features-list {
+.slider-list {
   list-style: none;
 }
 
-.features-slider {
+.slider-item {
   text-align: center;
 }
 
-.features-slider h3 {
+.slider-title {
   font-size: 55px;
   line-height: 55px;
   font-weight: 500px;
 }
 
-.features-slider p {
+.slider-description {
   font-size: 16px;
   line-height: 24px;
 }
@@ -87,13 +89,13 @@ background-color: var(--basic-white);
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;
-  color: var(--basic-white);
   text-decoration: none;
+  color: var(--basic-white);
   border: var(--special-pink) 3px;
   background-color: var(--special-pink);
 }
 
-.specializations-item h3 {
+.specialization-title {
   font-size: 24px;
   font-weight: 700;
   line-height: 30px;
@@ -121,7 +123,7 @@ background-color: var(--basic-white);
   text-align: center;
   color: var(--basic-white);
   text-decoration: none;
-  background-color: var(--special_green);
+  background-color: var(--special-green);
 }
 
 .order-presentation {
@@ -134,31 +136,35 @@ background-color: var(--basic-white);
   background-color: var(--secial-yellow);
 }
 
-.about-the-company h3 {
+.specializations-list {
+  list-style: none;
+}
+
+.about-leftside-title {
   font-size: 45px;
   font-weight: 500;
   line-height: 45px;
 }
 
-.about-the-company p {
+.about-leftside-description {
   font-size: 16px;
 }
 
-.about-the-company h4 {
-  font-size: 16px;
-  font-weight: 700;
-}
-
-.about-the-company .what-we-do-item {
-  font-size: 16px;
-}
-
-.statistics p {
+.what-we-do {
   font-size: 16px;
   font-weight: 700;
 }
 
-.statistics .percentages-item-num {
+.what-we-do-item {
+  font-size: 16px;
+}
+
+.statistic-description {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.percentages-item-num {
   font-size: 45px;
   font-weight: 700;
   line-height: 64px;
@@ -170,20 +176,133 @@ sup {
   line-height: 40px;
 }
 
-.statistics .percentages-item-desc {
+.percentages-item-desc {
   font-size: 16px;
   line-height: 18px;
   font-weight: inherit;
 }
 
-.footer-sale h4 {
+.sale-title {
   font-size: 36px;
   font-weight: 700;
   line-height: 36px;
 }
 
-.footer-sale p {
+.sale {
   font-size: 16px;
   line-height: 22px;
+}
+
+.catalog-title {
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 55px;
+}
+
+.cost {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30;
+}
+
+.cost-from {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.cost-before {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.grid {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.grid-item {
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--basic-extra-dark);
+}
+
+.grid-list {
+  list-style: none;
+}
+
+.features {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.features-item {
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--basic-extra-dark);
+}
+
+.features-list {
+  list-style: none;
+}
+
+.sorting-title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.sorting-list {
+  list-style: none;
+}
+
+.sorting-item {
+  line-height: 18px;
+}
+
+.sorting-item a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.catalog-list {
+  list-style: none;
+}
+
+
+.template-name {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.template-description {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--minimal-gray);
+}
+
+.catalog-item-price {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-white);
+  background-color: var(--special-pink);
+  border: solid 3px;
+  width: 200px;
+  height: 50px;
+}
+
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-item {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  color: var(--basic-black);
 }
 
