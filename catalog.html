@@ -4,6 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
+  <link rel="stylesheet" href="style/normalize.css">
+  <link href="style/style.css" rel="stylesheet">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="favicon/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicon/180.png">
@@ -12,19 +14,19 @@
 
 <body>
   <header class="main-header">
-    <nav class="main-navigation">
+    <nav class="main-nav">
       <a class="main-header-logo" href="index.html">
         <img src="/img/logo/logo-nerds.svg" width="160" height="65" alt="Логотип дизайн-студии Нёрдс">
       </a>
-      <ul class="site-navigation">
-        <li><a href="blank.html">Студия</a></li>
-        <li><a href="blank.html">Клиенты</a></li>
-        <li><a href="catalog.html">Магазин</a></li>
-        <li><a href="blank.html">Контакты</a></li>
+      <ul class="site-nav">
+        <li class="studio"><a href="blank.html">Студия</a></li>
+        <li class="customers"><a href="blank.html">Клиенты</a></li>
+        <li class="shop"><a href="catalog.html">Магазин</a></li>
+        <li class="contacs"><a href="blank.html">Контакты</a></li>
       </ul>
-      <ul>
-        <li>
-          <a class="basket" href="blank.html">Корзина</a>
+      <ul class="basket">
+        <li class="item-basket">
+          <a href="blank.html">Корзина</a>
         </li>
       </ul>
     </nav>
@@ -32,11 +34,11 @@
   </header>
 
   <main class="container">
-    <section class="page-title">
+    <section class="catalog-title">
       <h1>Магазин готовых шаблонов</h1>
     </section>
     <section class="filter">
-      <h2>Фильтр товаров</h2>
+      <h2 class="filter-title">Фильтр товаров</h2>
       <form method="get" action="https://echo.htmlacademy.ru">
         <fieldset>
           <legend>Стоимость:</legend>
@@ -92,28 +94,28 @@
     <section class="sorting">
       <h2>Сортировать:</h2>
       <ul class="sorting-list">
-        <li class="sorting-item">
+        <li class="sorting-item price">
           <a>По цене</a>
         </li>
-        <li class="sorting-item">
+        <li class="sorting-item type">
           <a href="#">По типу</a>
         </li>
-        <li class="sorting-item">
+        <li class="sorting-item name">
           <a href="#">По названию</a>
         </li>
       </ul>
-      <div>
-        <span>
+      <div class="arrows">
+        <span class="arrow-up">
           <a href="#"></a>
         </span>
-        <span>
+        <span class="arrow-down">
           <a href="#"></a>
         </span>
       </div>
     </section>
 
     <section class="templates">
-      <h2>Список шаблонов</h2>
+      <h2 class="templates-title">Список шаблонов</h2>
       <ul class="catalog">
         <li class="catalog-item">
           <div class="design">
@@ -121,11 +123,11 @@
             <span></span>
             <span></span>
           </div>
-          <figure>
+          <figure class="template-img">
             <img src="/img/catalog/catalog-sedona.jpg" width="358" height="578" alt="Превью сайта Sedona">
             <figcaption class="site-description">
               <a href="#">Sedona</a>
-              <p>Информационный сайт<br> для туристов</p>
+              <p class="template-desription">Информационный сайт<br> для туристов</p>
               <button class="catalog-item-price" type="button">9 900 ₽</button>
             </figcaption>
           </figure>
@@ -136,11 +138,11 @@
             <span></span>
             <span></span>
           </div>
-          <figure>
+          <figure class="template-img">
             <img src="/img/catalog/catalog-pink.jpg" width="358" height="578" alt="Превью сайта Pink App">
             <figcaption class="site-description">
               <a href="#">Pink App</a>
-              <p>Продуктовый лендинг<br> приложения для iOS и Android</p>
+              <p class="template-description">Продуктовый лендинг<br> приложения для iOS и Android</p>
               <button class="catalog-item-price" type="button">9 900 ₽</button>
             </figcaption>
           </figure>
@@ -151,11 +153,11 @@
             <span></span>
             <span></span>
           </div>
-          <figure>
+          <figure class="template-img">
             <img src="/img/catalog/catalog-borodinski.jpg" width="358" height="578" alt="Превью сайта Barbershop">
             <figcaption class="site-description">
               <a href="#">Barbershop</a>
-              <p>Сайт салона красоты.<br> Для мужчин, да.</p>
+              <p class="template-description">Сайт салона красоты.<br> Для мужчин, да.</p>
               <button class="catalog-item-price" type="button">9 900 ₽</button>
             </figcaption>
           </figure>
@@ -166,11 +168,11 @@
             <span></span>
             <span></span>
           </div>
-          <figure>
+          <figure class="template-img">
             <img src="/img/catalog/catalog-mishka.jpg" width="358" height="578" alt="Превью сайта MISHKA">
             <figcaption class="site-description">
               <a href="#">MISHKA</a>
-              <p>Интернет-магазин<br> вязаных игрушек</p>
+              <p class="template-description">Интернет-магазин<br> вязаных игрушек</p>
               <button class="catalog-item-price" type="button">9 900 ₽</button>
             </figcaption>
           </figure>
@@ -181,11 +183,11 @@
             <span></span>
             <span></span>
           </div>
-          <figure>
+          <figure class="template-img">
             <img src="/img/catalog/catalog-aplus.jpg" width="358" height="578" alt="Превью сайта A Plus">
             <figcaption class="site-description">
               <a href="#">A Plus</a>
-              <p>Лендинг курсов повышения<br> квалификации</p>
+              <p class="template-description">Лендинг курсов повышения<br> квалификации</p>
               <button class="catalog-item-price" type="button">9 900 ₽</button>
             </figcaption>
           </figure>
@@ -196,11 +198,11 @@
             <span></span>
             <span></span>
           </div>
-          <figure>
+          <figure class="template-img">
             <img src="/img/catalog/catalog-kvast.jpg" width="358" height="578" alt="Превью сайта КВАСТ">
             <figcaption class="site-description">
               <a href="#">КВАСТ</a>
-              <p>Промо-сайт производителя<br> крафтового кваса</p>
+              <p class="template-description">Промо-сайт производителя<br> крафтового кваса</p>
               <button class="catalog-item-price" type="button">9 900 ₽</button>
             </figcaption>
           </figure>
@@ -226,8 +228,8 @@
       <li class="social-button"><a href="#">Instagram</a></li>
     </ul>
     <div class="footer-sale">
-      <h4>Давайте дружить, это выгодно!</h4>
-      <p>Скидка 10% для друзей из социальных сетей.</p>
+      <h4 class="sale-title">Давайте дружить, это выгодно!</h4>
+      <p class="sale">Скидка 10% для друзей из социальных сетей.</p>
     </div>
   </footer>
 </body>
