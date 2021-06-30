@@ -100,6 +100,14 @@ background-color: var(--basic-white);
   background-position: right;
 }
 
+.second-slider {
+  background-image: url("/img/slider/slide-2.png");
+}
+
+.slider-item:last-child{
+  background-image: url("/img/slider/slide-3.png");
+}
+
 .slider-item-active {
   display: flex;
   flex-direction: column;
@@ -137,7 +145,11 @@ background-color: var(--basic-white);
 .sliders-btns-wrap {
   position: absolute;
   bottom: 96px;
-  left: 536px;
+  margin-left: 536px;
+}
+
+.slider-btn {
+  background-color: var(--basic-white);
 }
 
 .specializations {
@@ -161,6 +173,7 @@ background-color: var(--basic-white);
 }
 
 .specializations-item p {
+  display: inline-block;
   margin: 0 0 49px 0;
   font-size: 16px;
   line-height: 24px;
@@ -207,13 +220,19 @@ background-color: var(--basic-white);
 }
 
 .about-the-company {
-  display: flex;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(12, 60px);
+  grid-column-gap: 20px;
   max-width: 1174px;
-  justify-content: space-between;
+  margin-bottom: 138px;
 
 }
 
 .about-leftside-title {
+  display: grid;
+  grid-auto-flow: column;
+  grid-column: 1 / 8;
   margin: 0 0 32px 0;
   font-size: 45px;
   font-weight: 500;
@@ -235,9 +254,22 @@ background-color: var(--basic-white);
   font-size: 16px;
 }
 
+.statistic {
+  display: grid;
+  grid-auto-flow: column;
+  grid-column: -5 / -1;
+}
+
 .statistic-description {
   font-size: 16px;
   font-weight: 700;
+}
+
+.percentages-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .percentages-item-num {
@@ -253,10 +285,35 @@ background-color: var(--basic-white);
 }
 
 .percentages-item-desc {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
   font-size: 16px;
   line-height: 18px;
   font-weight: inherit;
 }
+
+.customers {
+  margin-bottom: 126px;
+  min-width: 1159px;
+  margin-right: 183px;
+}
+
+.customers-list {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1159px;
+  list-style: none;
+  gap: 45px;
+}
+
+
+.map {
+  min-width: 1640px;
+  margin-bottom: 74px;
+}
+
+
 
 .sale-title {
   font-size: 36px;
