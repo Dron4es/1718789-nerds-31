@@ -25,7 +25,7 @@
         <ul class="site-nav">
           <li class="site-nav-studio"><a href="blank.html">Студия</a></li>
           <li class="site-nav-customers"><a href="blank.html">Клиенты</a></li>
-          <li class="site-nav-shop"><a href="catalog.html">Магазин</a></li>
+          <li class="site-nav-shop active-link"><a href="catalog.html">Магазин</a></li>
           <li class="site-nav-contacs"><a href="blank.html">Контакты</a></li>
         </ul>
         <ul class="basket">
@@ -52,8 +52,8 @@
       <section class="filter">
         <!-- <h2 class="filter-title">Фильтр товаров</h2> -->
         <form method="get" action="https://echo.htmlacademy.ru">
-          <fieldset class="filter-item">
-              <legend>Стоимость:</legend>
+          <fieldset class="filter-fieldset">
+              <legend class="legend-cost">Стоимость:</legend>
               <div class="range-filter">
                 <div class="range-controls">
                   <div class="scale">
@@ -72,23 +72,24 @@
                 </div>
               </div>
           </fieldset>
+          <fieldset class="filter-fieldset">
             <legend class="grid">Сетка:</legend>
             <ul class="grid-list">
               <li class="grid-item">
-                <input type="radio" name="view" value="adaptive" id="filter-adaptive" checked>
+                <input class="visually-hidden" type="radio" name="view" value="adaptive" id="filter-adaptive" checked>
                 <label class="grid-item" for="filter-adaptive">Адаптивная</label>
               </li>
               <li class="grid-item">
-                <input type="radio" name="view" value="fixed" id="filter-fixed">
+                <input class="visually-hidden" type="radio" name="view" value="fixed" id="filter-fixed">
                 <label for="filter-fixed">Фиксированная</label>
               </li>
               <li class="grid-item">
-                <input type="radio" name="view" value="rubber" id="filter-rubber">
+                <input class="visually-hidden" type="radio" name="view" value="rubber" id="filter-rubber" disabled>
                 <label for="filter-rubber">Резиновая</label>
               </li>
             </ul>
           </fieldset>
-          <fieldset>
+          <fieldset class="filter-fieldset">
             <legend class="features">Особенности:</legend>
             <ul class="features-list">
               <li class="features-item">
@@ -120,7 +121,7 @@
       <section class="sorting">
         <h2 class="sorting-title">Сортировать:</h2>
         <ul class="sorting-list">
-          <li class="sorting-item price">
+          <li class="sorting-item price active-sorting-item">
             <a>По цене</a>
           </li>
           <li class="sorting-item type">
@@ -131,11 +132,17 @@
           </li>
         </ul>
         <div class="arrows">
-          <span class="arrow-up">
-            <a href="#"></a>
+          <span class="arrow-wrap arrow-down active-arrow">
+            <a href="#"><svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.5 10L0 0H11" fill="#231F20"/>
+              </svg>
+              </a>
           </span>
-          <span class="arrow-down">
-            <a href="#"></a>
+          <span class="arrow-wrap arrow-up">
+            <a href="#"><svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.5 0L0 10H11L5.5 0Z" fill="#231F20"/>
+              </svg>
+              </a>
           </span>
         </div>
       </section>
@@ -143,7 +150,7 @@
       <section class="templates">
         <!-- <h2 class="templates-title">Список шаблонов</h2> -->
         <ul class="catalog-list">
-          <li class="catalog-item catalog-item-sedona">
+          <li class="catalog-item">
             <div class="decor-dots">
               <span></span>
               <span></span>
@@ -153,12 +160,12 @@
               <img src="img/catalog-sedona.jpg" width="358" height="578" alt="Превью сайта Sedona">
               <figcaption class="preview">
                 <a class="template-name" href="#">Sedona</a>
-                <p class="template-desription">Информационный сайт<br> для туристов</p>
+                <p class="template-description">Информационный сайт<br> для туристов</p>
                 <button class="catalog-item-price" type="button">9 900 ₽</button>
               </figcaption>
             </figure>
           </li>
-          <li class="catalog-item catalog-item-pink">
+          <li class="catalog-item">
             <div class="decor-dots">
               <span></span>
               <span></span>
@@ -237,7 +244,7 @@
 
         <nav class="catalog-nav">
           <ul class="pagination-list">
-            <li class="pagination-item"><a class="catalog-nav-btn" href="#">1</a></li>
+            <li class="pagination-item"><a class="active-num" href="#">1</a></li>
             <li class="pagination-item"><a class="catalog-nav-btn">2</a></li>
             <li class="pagination-item"><a class="catalog-nav-btn" href="#">3</a></li>
             <li class="pagination-item pagination-item-next"><a class="catalog-nav-btn catalog-nav-btn-next" href="#">Следующая</a></li>
@@ -249,6 +256,9 @@
   </main>
 
   <div class="map">
+    <div class="feedback-form">
+
+    </div>
     <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a><a href="https://yandex.ru/maps/2/saint-petersburg/house/naberezhnaya_reki_karpovki_5p/Z0kYdQZnSkAOQFtjfXV3eX9hZg==/?ll=30.316773%2C59.968033&utm_medium=mapframe&utm_source=maps&z=15.6" style="color:#eee;font-size:12px;position:absolute;top:14px;">Набережная реки Карповки, 5П — Яндекс.Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUeNSfRpA" width="100%" height="416" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
   </div>
 
