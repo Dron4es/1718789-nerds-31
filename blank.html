@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
     <link rel="stylesheet" href="style/normalize.css">
-    <link href="style/style.css" rel="stylesheet">
+    <link href="style/style-min.css" rel="stylesheet">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="favicon/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="favicon/180.png">
@@ -44,6 +44,22 @@
     <a href="index.html">Страница сайта</a>
   </main>
 
+  <div class="map">
+    <div style="position:relative;overflow:hidden;"><a
+        href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps"
+        style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a><a
+        href="https://yandex.ru/maps/2/saint-petersburg/house/naberezhnaya_reki_karpovki_5p/Z0kYdQZnSkAOQFtjfXV3eX9hZg==/?ll=30.316773%2C59.968033&utm_medium=mapframe&utm_source=maps&z=15.6"
+        style="color:#eee;font-size:12px;position:absolute;top:14px;">Набережная реки Карповки, 5П —
+        Яндекс.Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUeNSfRpA" width="100%" height="416"
+        frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+    <div class="modal-popup">
+      <h2 class="modal-title">NЁRDS DESIGN STUDIO</h2>
+      <p class="modal-description">наб. Реки Карповки, 5 лит П, Санкт-Петербург</p>
+      <a class="modal-tel" href="tel:+78005558628">+7 800 555-86-28</a>
+      <a class="modal-feedback-btn" href="#">НАПИШИТЕ НАМ</a>
+    </div>
+  </div>
+
   <footer class="main-footer centered">
     <ul class="footer-social">
       <li class="social-btn">
@@ -69,6 +85,37 @@
     <p class="sale sale-footer">Скидка 10% для друзей из социальных сетей.</p>
 
 </footer>
+
+<section class="popup popup-hide">
+  <h2 class="popup-title">Напишите нам</h2>
+  <form class="form-popup" action="https://echo.htmlacademy.ru" method="POST">
+    <label class="form-name" for="your-name">
+      Ваше имя:
+      <input id="your-name" type="name" name="name" placeholder="Имя Фамилия" required>
+    </label>
+
+    <label class="form-email" for="email">
+      Ваш email:
+      <input id="email" type="email" name="email" placeholder="email@example.com" required>
+    </label>
+
+    <label class="form-text" for="letter-text">
+      Текст письма:
+      <textarea id="letter-text" type="text" name="text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+    </label>
+
+    <input class="send-form" type="submit" value="Отправить">
+
+  </form>
+  <button type="button" class="close-btn">
+    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M13.3299 10.5005L20.7072 3.12321C21.0963 2.7317 21.0963 2.09952 20.7072 1.70801L19.292 0.291799C18.9005 -0.0972665 18.2683 -0.0972665 17.8768 0.291799L10.4995 7.67009L3.12221 0.2928C2.7307 -0.0962657 2.09852 -0.0962657 1.70701 0.2928L0.291799 1.70801C-0.0972665 2.09952 -0.0972665 2.7317 0.291799 3.12321L7.66909 10.5005L0.291799 17.8778C-0.0972665 18.2693 -0.0972665 18.9015 0.291799 19.293L1.70801 20.7082C2.09952 21.0973 2.7317 21.0973 3.12321 20.7082L10.5005 13.3309L17.8778 20.7082C18.2693 21.0973 18.9015 21.0973 19.293 20.7082L20.7082 19.293C21.0973 18.9015 21.0973 18.2693 20.7082 17.8778L13.3299 10.5005Z" fill="#FB565A"/>
+      </svg>
+    <span class="visually-hidden">Закрыть</span>
+  </button>
+
+</section>
+<script src="js/script-min.js"></script>
 
   </body>
 </html>

@@ -1,0 +1,1 @@
+let modalOpenBtn=document.querySelector(".modal-feedback-btn"),popup=document.querySelector(".popup"),modalCloseBtn=document.querySelector(".close-btn");modalOpenBtn.addEventListener("click",(function(e){e.preventDefault(),popup.classList.remove("popup-hide")})),modalCloseBtn.addEventListener("click",(function(){popup.classList.add("popup-hide")}));
