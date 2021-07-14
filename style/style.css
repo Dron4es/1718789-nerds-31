@@ -1225,6 +1225,7 @@
     max-width: 960px;
     height: 590px;
     background-color: var(--basic-white);
+    transition: 0.2s;
 }
 
 .form-popup {
