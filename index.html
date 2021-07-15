@@ -166,13 +166,13 @@
 
 
   <div class="map">
-    <div style="position:relative;overflow:hidden;"><a
+    <div class="yandex-map" style="position:relative;overflow:hidden;"><a
         href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps"
         style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a><a
         href="https://yandex.ru/maps/2/saint-petersburg/house/naberezhnaya_reki_karpovki_5p/Z0kYdQZnSkAOQFtjfXV3eX9hZg==/?ll=30.316773%2C59.968033&utm_medium=mapframe&utm_source=maps&z=15.6"
         style="color:#eee;font-size:12px;position:absolute;top:14px;">Набережная реки Карповки, 5П —
-        Яндекс.Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUeNSfRpA" width="100%" height="416"
-        frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+        Яндекс.Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUeNSfRpA"
+        style="position:relative;"></iframe></div>
     <div class="modal-popup">
       <h2 class="modal-title">NЁRDS DESIGN STUDIO</h2>
       <p class="modal-description">наб. Реки Карповки,<br> 5 лит П, Санкт-Петербург</p>
@@ -216,7 +216,7 @@
     <form class="form-popup" action="https://echo.htmlacademy.ru" method="POST">
       <label class="form-name" for="your-name">
         Ваше имя:
-        <input id="your-name" type="name" name="name" placeholder="Имя Фамилия" required>
+        <input id="your-name" type="text" name="name" placeholder="Имя Фамилия" required>
       </label>
 
       <label class="form-email" for="email">
@@ -226,7 +226,7 @@
 
       <label class="form-text" for="letter-text">
         Текст письма:
-        <textarea id="letter-text" type="text" name="text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+        <textarea id="letter-text" name="text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
       </label>
 
       <input class="send-form" type="submit" value="Отправить">
