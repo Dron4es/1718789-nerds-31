@@ -47,7 +47,6 @@
 
 .centered {
   max-width: 1157px;
-  /* padding: 0 140px; */
   margin: 0 auto;
 }
 
@@ -1033,7 +1032,6 @@
 }
 
 .decor-dots span {
-  /* display: inline-block; */
   width: 14px;
   height: 14px;
 
@@ -1079,6 +1077,12 @@
 }
 
 .catalog-item:hover .preview {
+  height: 236px;
+
+  opacity: 1;
+}
+
+.template-name:focus .preview {
   height: 236px;
 
   opacity: 1;
