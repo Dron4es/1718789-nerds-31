@@ -364,7 +364,8 @@
     width: 1158px;
     height: 2px;
     background-color: var(--head-gray);
-    bottom: -73px;
+    bottom: -75px;
+    left: 9px;
 }
 
 .about-leftside {
@@ -473,7 +474,7 @@
 }
 
 .customers {
-    margin-bottom: 126px;
+    margin-bottom: 120px;
     position: relative;
 }
 
@@ -483,7 +484,7 @@
     width: 1158px;
     height: 2px;
     background-color: var(--head-gray);
-    bottom: -44px;
+    bottom: -39px;
 }
 
 .customers-list {
@@ -493,6 +494,21 @@
     margin: 0 auto;
     max-width: 1159px;
     list-style: none;
+}
+
+.customers-item:nth-child(2) {
+    padding-right: 9px;
+    margin-top: -17px;
+}
+
+.customers-item:nth-child(3) {
+  padding-right: 25px;
+  padding-top: 2px;
+}
+
+.customers-item:last-child {
+  margin-right: -3px;
+  margin-top: -11px;
 }
 
 .customers-item {
@@ -511,10 +527,6 @@
     opacity: 0.1;
 }
 
-/* .customers-item img:hover {
-  background-color: var(--basic-black);
-} */
-
 .customers-item:not(:last-child)::after {
     content: "";
     position: absolute;
@@ -524,15 +536,16 @@
 }
 
 .customers-item:first-child::after {
-    right: -48px;
+    right: -50px;
 }
 
 .customers-item:nth-child(2)::after {
-    right: -44px;
+    right: -36px;
+    top: 18px;
 }
 
 .customers-item:nth-child(3)::after {
-    right: -55px;
+    right: -32px;
 }
 
 .catalog-welcome {
@@ -1024,7 +1037,7 @@
     display: flex;
     gap: 11px;
     list-style: none;
-    margin: 0 0 60px 0;
+    margin: 0 0 64px 0;
     padding: 55px 0 0 0;
 }
 
@@ -1071,7 +1084,12 @@
 }
 
 .catalog-nav-btn-next {
-    padding: 17px 77px 15px 78px;
+    padding: 17px 91px 15px 78px;
+    text-transform: uppercase;
+}
+
+.pagination-item-next {
+  text-transform: uppercase;
 }
 
 .map {
@@ -1200,6 +1218,8 @@
 }
 
 .sale-title {
+    margin-left: -100px;
+    margin-bottom: -5px;
     align-self: end;
     font-size: 36px;
     font-weight: 700;
@@ -1207,6 +1227,8 @@
 }
 
 .sale {
+    margin-left: -100px;
+    margin-top: 6px;
     align-self: start;
     font-size: 16px;
     line-height: 22px;
