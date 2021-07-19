@@ -59,8 +59,8 @@
                   <div class="scale">
                     <div class="bar"></div>
                   </div>
-                  <div class="toggle toggle-min" tabindex="0"></div>
-                  <div class="toggle toggle-max" tabindex="0"></div>
+                  <div class="toggle toggle-min" tabindex="0" aria-label="Минимальная стоимость."></div>
+                  <div class="toggle toggle-max" tabindex="0" aria-label="Максимальная стоимость."></div>
                 </div>
                 <div class="price-controls">
                   <label class="min-price">
@@ -75,15 +75,15 @@
           <fieldset class="filter-fieldset">
             <legend class="grid">Сетка:</legend>
             <ul class="grid-list">
-              <li class="grid-item">
+              <li class="grid-item" tabindex="0">
                 <input class="visually-hidden" type="radio" name="view" value="adaptive" id="filter-adaptive" checked>
                 <label for="filter-adaptive">Адаптивная</label>
               </li>
-              <li class="grid-item">
+              <li class="grid-item" tabindex="0">
                 <input class="visually-hidden" type="radio" name="view" value="fixed" id="filter-fixed">
                 <label for="filter-fixed">Фиксированная</label>
               </li>
-              <li class="grid-item">
+              <li class="grid-item" tabindex="0">
                 <input class="visually-hidden" type="radio" name="view" value="rubber" id="filter-rubber" disabled checked>
                 <label for="filter-rubber">Резиновая</label>
               </li>
@@ -92,23 +92,23 @@
           <fieldset class="filter-fieldset">
             <legend class="features">Особенности:</legend>
             <ul class="features-list">
-              <li class="features-item">
+              <li class="features-item" tabindex="0">
                 <input class="visually-hidden" type="checkbox" name="slider" id="filter-slider" checked>
                 <label for="filter-slider">Слайдер</label>
               </li>
-              <li class="features-item">
+              <li class="features-item" tabindex="0">
                 <input class="visually-hidden" type="checkbox" name="advantages-block" id="filter-advantages-block">
                 <label for="filter-advantages-block">Блок преимуществ</label>
               </li>
-              <li class="features-item">
+              <li class="features-item" tabindex="0">
                 <input class="visually-hidden" type="checkbox" name="news" id="filter-news" checked>
                 <label for="filter-news">Новости</label>
               </li>
-              <li class="features-item">
+              <li class="features-item" tabindex="0">
                 <input class="visually-hidden" type="checkbox" name="gallery" id="filter-gallery">
                 <label for="filter-gallery">Галерея</label>
               </li>
-              <li class="features-item">
+              <li class="features-item" tabindex="0">
                 <input class="visually-hidden" type="checkbox" name="basket" id="filter-basket" disabled>
                 <label for="filter-basket">Корзина</label>
               </li>
@@ -132,13 +132,13 @@
           </li>
         </ul>
         <div class="arrows">
-          <span class="arrow-wrap arrow-down active-arrow">
+          <span class="arrow-wrap arrow-down active-arrow" aria-label="Сортировать по убыванию.">
             <a href="#"><svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M5.5 10L0 0H11" fill="#231F20"/>
               </svg>
               </a>
           </span>
-          <span class="arrow-wrap arrow-up">
+          <span class="arrow-wrap arrow-up" aria-label="Сортировать по возрастанию.">
             <a href="#"><svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M5.5 0L0 10H11L5.5 0Z" fill="#231F20"/>
               </svg>

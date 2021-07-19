@@ -38,7 +38,7 @@
 }
 
 .page-body {
-  min-width: 1440px;
+  min-width: 1200px;
   margin: 0;
   padding: 0;
 
@@ -799,6 +799,10 @@
   color: var(--basic-extra-dark);
 }
 
+.grid-item:focus {
+  outline: 1px solid var(--light-gray);
+}
+
 .grid-list {
   position: relative;
 
@@ -851,7 +855,9 @@
 }
 
 .grid-item input:hover + label::before,
-.grid-item input:hover + label::after {
+.grid-item input:hover + label::after,
+.grid-item input:focus + label::before,
+.grid-item input:focus + label::after {
   opacity: 1;
 }
 
@@ -877,6 +883,10 @@
   font-size: 16px;
   line-height: 20px;
   color: var(--basic-extra-dark);
+}
+
+.features-item:focus {
+  outline: 1px solid var(--light-gray);
 }
 
 .features-list {
