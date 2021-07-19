@@ -194,19 +194,19 @@
 }
 
 .slider-item:first-child {
-  background-image: url("./img/slider/slide-1.png");
+  background-image: url("../img/slider/slide-1.png");
   background-repeat: no-repeat;
   background-position: right;
 }
 
 .slider-item:nth-child(2) {
-  background-image: url("./img/slider/slide-2.png");
+  background-image: url("../img/slider/slide-2.png");
   background-repeat: no-repeat;
   background-position: right bottom;
 }
 
 .slider-item:last-child {
-  background-image: url("./img/slider/slide-3.png");
+  background-image: url("../img/slider/slide-3.png");
   background-repeat: no-repeat;
   background-position: right;
 }
@@ -900,12 +900,12 @@
   width: 23px;
   height: 23px;
 
-  background: url(./img/checkboxes/checkbox-off.svg);
+  background: url("../img/checkboxes/checkbox-off.svg");
   opacity: 0.4;
 }
 
 .features-item input:checked + label::before {
-  background: url(./img/checkboxes/checkbox-on.svg);
+  background: url("../img/checkboxes/checkbox-on.svg");
 }
 
 .features-item input:hover + label::before {
@@ -1050,7 +1050,7 @@
   height: 40px;
 
   background-color: var(--light-gray-transparent);
-  background-image: url("./img/template-header.svg");
+  background-image: url("../img/template-header.svg");
   opacity: 0.12;
 
   gap: 9px;
@@ -1243,7 +1243,7 @@
 
   height: 416px;
 
-  background-image: url("./img/map.png");
+  background-image: url("../img/map.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 1440px 416px;
